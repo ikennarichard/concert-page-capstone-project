@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;900&display=swap');
+
 :root {
   --carmine-pink: #ec5242;
   --light-gray: #d3d3d3;
   --charleston-green: #272a31;
+  --granite-gray: #616161;
+  --phillipine-gray: #8c8c8c;
+  --arsenic: #3C3F46;
   --cultured: #f4f4f4;
-  --text-background: linear-gradient(90deg, rgba(236,82,66,1) 47%, rgba(39,42,49,1) 60%);
+  --page-background:linear-gradient(90deg, rgba(244,244,244,1) 1%, rgba(211,211,211,1) 99%);
 }
 
 *, *::before, *::after {
@@ -45,7 +50,6 @@ main {
   align-content: center;
   gap: 30px;
   width: 100%;
-  padding: 1em;
 }
 
 header {
@@ -58,14 +62,13 @@ header img {
   width: 40px;
 }
 
-h1 a {
-  text-decoration: none;
-  color: var(--cultured);
-  
+h1 {
+  display: none;
 }
 
-.menu_icon {
-  filter: brightness(1) invert(1);
+h1 a {
+  text-decoration: none;
+  color: var(--charleston-green);
 }
 
 nav {
@@ -76,36 +79,108 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 1em;
 }
 
 .headline_section h2 {
   font-size: 2.5rem;
-  background-image: var(--text-background);
+  background-image: url(./img/red-clouds-image.jpg);
   background-clip: text;
   color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
-.headline_section p {
+.headline_section > p {
+  color: var(--granite-gray);
+  background-color: var(--cultured);
+  padding: .8em;
+  border: 3px solid white;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.concert_date {
+  background-color: var(--cultured);
+  font-family: 'COCOGOOSE', sans-serif; 
+  color: var(--granite-gray);
+  font-family: 'Urbanist', sans-serif;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.concert_date b { 
+  font-weight: 900;
+  font-size: 1.5rem;                        
+}
+
+.concert_date p {
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.main_program {
+  display: grid;
+  place-items: center;
+  background-color: var(--charleston-green);
+  padding: 0.7em;
+  padding-bottom: 2em;
+  gap: 10px;
+}
+
+.main_program h2 {
   color: var(--cultured);
-  padding: .6em;
 }
 
-.headline_section .tickets {
-  border: 3px solid var(--cultured);
+.main_program ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.main_program ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 0.6em;
+  background-color: var(--arsenic);
+}
+
+.main_program ul li h3 {
+  color: var(--carmine-pink);
+  font-size: 1rem;
+  margin-left: 1em;
+}
+
+.main_program ul li > p {
+  color: var(--light-gray);
+  text-align: left;
+  font-size: 0.8rem;
+  width: 30%;
+}
+
+.program_icon {
+  width: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.tickets {
+  display: block;
   margin-inline: auto;
   color: var(--cultured);
+  background-color: var(--carmine-pink);
   text-align: center;
-  padding: .5em;
-  width: fit-content;
+  padding: 1.5em;
+  width: 88%;
   text-decoration: none;
-  font-weight: 900;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.headline_section .tickets:hover {
-  background-color: var(--cultured);
-  color: var(--carmine-pink);
-  transform: scale(1.1);
+  font-size: .8rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
