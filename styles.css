@@ -125,13 +125,19 @@ nav {
   display: grid;
   place-items: center;
   background-color: var(--charleston-green);
-  padding: 0.7em;
-  padding-bottom: 2em;
-  gap: 10px;
+  padding: 2em 0.7em;
+  gap: 20px;
 }
 
 .main_program h2 {
   color: var(--cultured);
+  font-size: 1.3rem;
+}
+
+.main_program .red_line {
+  border: 1px solid var(--carmine-pink);
+  width: 50px;
+  border-radius: 3px;
 }
 
 .main_program ul {
@@ -172,7 +178,6 @@ nav {
 
 .tickets {
   display: block;
-  margin-inline: auto;
   color: var(--cultured);
   background-color: var(--carmine-pink);
   text-align: center;
@@ -181,6 +186,7 @@ nav {
   text-decoration: none;
   font-size: .8rem;
   font-weight: 700;
+  margin-block-start: 1em;
 }
 
 @media (min-width: 768px) {
