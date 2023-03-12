@@ -17,17 +17,59 @@
 }
 
 html {
-  color-scheme: dark light;
+  color-scheme: light;
 }
 
 body {
   min-height: 100vh;
   font-family: 'Lato', sans-serif;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
-  display: block;
   max-width: 100%;
+}
+
+.login_section {
+  display: none;
+}
+
+main {
+  display: grid;
+  align-content: center;
+  gap: 30px;
+  width: 100%;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  height: min-content;
+  width: 40px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--charleston-green);
+}
+
+nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .log_section {
+    display: block;
+  }
+
+  .login_section ul {
+    list-style-type: none;
+    display: flex;
+  }
 }

@@ -1,1 +1,4 @@
 # concert-page-capstone-project
+
+<p>"Experience the magic of music like never before with Nevercast."</p>
+<p>Join us for an unforgettable evening of enchanting melodies and captivating rhythms at the Nevercast Music Concert. Immerse yourself in a magical atmosphere as our talented musicians take you on a journey through a diverse range of genres and styles, from soulful ballads to high-energy rock anthems. Lose yourself in the music and let your worries fade away as you experience the perfect fusion of sound and emotion. Don't miss this once-in-a-lifetime opportunity to witness the sheer brilliance of Nevercast's musical prowess. Get ready to be mesmerized</p>
