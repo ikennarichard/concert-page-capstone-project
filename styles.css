@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
+:root {
+  --carmine-pink: #ec5242;
+  --light-gray: #d3d3d3;
+  --charleston-green: #272a31;
+  --text-background: linear-gradient(90deg, rgba(236,82,66,1) 6%, rgba(39,42,49,1) 99%);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
