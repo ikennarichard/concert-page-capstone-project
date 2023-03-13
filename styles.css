@@ -35,6 +35,7 @@ body {
   align-items: center;
   background-image: url('./img/header-main-mobile-background.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
   backdrop-filter: blur(0.8px);
 }
 
@@ -83,6 +84,7 @@ nav {
 }
 
 .headline_section h2 {
+  width: 50%;
   font-size: 2.5rem;
   background-image: url(./img/red-clouds-image.jpg);
   background-clip: text;
@@ -98,6 +100,7 @@ nav {
   border: 3px solid white;
   font-size: .8rem;
   font-weight: 700;
+  width: 50%;
 }
 
 .concert_date {
@@ -108,6 +111,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 50%;
 }
 
 .concert_date b { 
@@ -188,15 +192,19 @@ nav {
   margin-block-start: 1em;
 }
 
-.featured_artists, .featured_artists > .container {
+.featured_artists {
   display: grid;
+  place-items: center;
   gap: 20px;
   background-color: var(--cultured);
 }
 
 .container {
-  height: 240px;
+  display: grid;
+  gap: 20px;
+  height: 250px;
   overflow: hidden;
+  width: 375px;
   transition: height 0.5s ease-in-out;
 }
 
@@ -259,8 +267,8 @@ nav {
   text-transform: uppercase;
   appearance: none;
   padding-block: 1em;
-  padding-inline: 2em;
-  width: 70%;
+  width: min(90%, 375px);
+  margin-right: 2em;
   background: none;
   outline: none;
   border: 1px solid var(--light-gray);
