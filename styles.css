@@ -11,6 +11,7 @@
   --arsenic: #3C3F46;
   --cultured: #f4f4f4;
   --page-background:linear-gradient(90deg, rgba(244,244,244,1) 1%, rgba(211,211,211,1) 99%);
+  --urbanist-font: 'Urbanist', sans-serif;
 }
 
 *, *::before, *::after {
@@ -48,7 +49,6 @@ img {
 main {
   display: grid;
   align-content: center;
-  gap: 30px;
   width: 100%;
 }
 
@@ -102,7 +102,6 @@ nav {
 
 .concert_date {
   background-color: var(--cultured);
-  font-family: 'COCOGOOSE', sans-serif; 
   color: var(--granite-gray);
   font-family: 'Urbanist', sans-serif;
   padding: 1em;
@@ -121,7 +120,7 @@ nav {
   font-size: .9rem;
 }
 
-.main_program {
+.main_program, .featured_artists {
   display: grid;
   place-items: center;
   background-color: var(--charleston-green);
@@ -134,7 +133,7 @@ nav {
   font-size: 1.3rem;
 }
 
-.main_program .red_line {
+.red_line {
   border: 1px solid var(--carmine-pink);
   width: 50px;
   border-radius: 3px;
@@ -187,6 +186,96 @@ nav {
   font-size: .8rem;
   font-weight: 700;
   margin-block-start: 1em;
+}
+
+.featured_artists, .featured_artists > .container {
+  display: grid;
+  gap: 20px;
+  background-color: var(--cultured);
+}
+
+.container {
+  height: 240px;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.slide_down {
+  height: 50em;
+}
+
+.featured_artists > h2 {
+  color: var(--charleston-green);
+}
+
+.featured_artists .red_line {
+  margin-top: -1em;
+}
+
+.featured_artists > .container > article {
+  display: flex;
+  gap: 10px;
+}
+
+.featured_artists > .container .image_container {
+  flex: 0 0 150px;
+}
+
+.featured_artists > .container .image_container > img{
+  height: 100%;
+}
+
+.celebrity_details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 40%;
+  margin-top: -2px;
+}
+
+.celebrity_name {
+  color: var(--charleston-green);
+}
+
+.celebrity_title {
+  color: var(--carmine-pink);
+  font-size: 0.8rem;
+  font-family: var(--urbanist-font);
+}
+
+.celebrity_info {
+  font-size: 1rem;
+  font-family: var(--urbanist-font);
+}
+
+.black_line {
+  display: block;
+  border: 1px solid var(--granite-gray);
+  border-radius: 3px;
+  width: 20px;
+}
+
+.more_button {
+  text-transform: uppercase;
+  appearance: none;
+  padding-block: 1em;
+  padding-inline: 2em;
+  width: 70%;
+  background: none;
+  outline: none;
+  border: 1px solid var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  width: 20px;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 @media (min-width: 768px) {
