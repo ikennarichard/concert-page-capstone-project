@@ -289,7 +289,7 @@ nav > ul li a:hover::after {
 .featured_artists > .container > div {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
 }
 
@@ -465,7 +465,7 @@ nav > ul li a:hover::after {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
 
   .login_section {
     display: block;
@@ -613,7 +613,7 @@ nav > ul li a:hover::after {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     place-items: center;
     gap: 10px;
     height: initial;
