@@ -1,7 +1,10 @@
 const featuredAritists = document.querySelector('.featured_artists > .container');
 const dropDownBtn = document.querySelector('.more_button');
 const dropDownIcon = document.querySelector('.dropdown');
-const container = document.querySelector('.container')
+const container = document.querySelector('.container');
+const menuIcon = document.querySelector('.menu_icon');
+const menuItems = [...document.querySelectorAll('nav li a')];
+const navBar = document.querySelector('.navbar');
 
 const artists = [
   {
@@ -47,6 +50,30 @@ const artists = [
 
   },
 ]
+
+function toggleMenuBtn() {
+  if (menuIcon.src.includes('menu')) {
+    menuIcon.src = 'icons/cancel-icon.svg';
+  } else {
+    menuIcon.src = 'icons/menu-icon.svg';
+  }
+}
+
+function displayMenu() {
+  if (window.innerWidth < 768) {
+    navBar.classList.toggle('show_menu');
+  }
+  menuIcon.classList.toggle('change_position');
+  toggleMenuBtn();
+}
+
+function displayMenuItems() {
+  navBar.classList.remove('show_menu');
+  menuIcon.src = 'icons/menu-icon.svg';
+}
+
+menuIcon.addEventListener('click', displayMenu);
+menuItems.forEach((item) => item.addEventListener('click', displayMenuItems));
 
 function addFeaturedArtists() {
   for (let i=0; i < artists.length; i++) {

@@ -1,0 +1,144 @@
+:root {
+  --brightish-gray: #d0d0d0;
+}
+
+.about {
+  align-items: center;
+  background-color: #efefef;
+}
+
+.about > .info {
+  border: 1px solid var(--brightish-gray);
+  color: var(--arsenic);
+  width: 100%;
+  text-align: center;
+}
+
+.about > .reach_us {
+  border: none;
+  text-align: center;
+}
+
+.about address > a {
+  color: var(--arsenic);
+  font-style: normal;
+}
+
+.logo_section {
+  background-color: #fff;
+}
+
+.logo_section h2 {
+  color: var(--arsenic);
+  width: 80%;
+  text-align: center;
+}
+
+.logo_section > p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--arsenic);
+  width: 70%;
+}
+
+.concert_logo {
+  padding-block: 0.6em;
+  width: 200px;
+  text-align: center;
+  color: var(--charleston-green);
+  font-size: 2rem;
+  border: 1px solid var(--granite-gray);
+}
+
+.past_events {
+  background-color: var(--cultured);
+}
+
+.past_events p {
+  text-align: center;
+}
+
+.past_events h2 {
+  color: var(--arsenic);
+  text-align: center;
+}
+
+.past_event {
+  background: url('/img/actionvance-unsplash.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 320px;
+  height: 200px;
+  position: relative;
+}
+
+.second {
+  background: url('/img/muneeb-syed-unsplash.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.past_event .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  opacity: 90%;
+  background-color: var(--carmine-pink);
+  height: 100%;
+  width: 100%;
+}
+
+.past_event p {
+  position: absolute;
+  top: 0;
+  transform: translate(50%, 50%);
+  width: 50%;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease-in-out;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.past_event p:hover {
+  text-shadow: 0 0 5px blue;
+}
+
+.past_event p > b {
+  font-size: 2rem;
+}
+
+.partner {
+  background-color: var(--arsenic);
+}
+
+.partner h2 {
+  color: #fff;
+}
+
+.partners {
+  display: flex;
+  gap: 30px;
+}
+
+.partners img {
+  width: 100px;
+}
+
+.partners .google {
+  width: 70px;
+}
+
+.partners .mozilla {
+  filter: brightness(2);
+}
+
+.footer_section {
+  background-color: var(--cultured);
+}
+
+.footer_section p {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--granite-gray);
+}

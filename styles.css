@@ -5,6 +5,7 @@
 :root {
   --carmine-pink: #ec5242;
   --light-gray: #d3d3d3;
+  --bright-gray: #efefef;
   --charleston-green: #272a31;
   --granite-gray: #616161;
   --phillipine-gray: #8c8c8c;
@@ -23,20 +24,12 @@
   padding: 0;
 }
 
-html {
-  color-scheme: light;
-}
-
 body {
   min-height: 100vh;
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-image: url('./img/header-main-mobile-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(0.8px);
+  background-color: var(--bright-gray);
 }
 
 img {
@@ -48,19 +41,13 @@ img {
 }
 
 main {
-  display: grid;
-  align-content: center;
   width: 100%;
+  overflow: hidden;
 }
 
 header {
   display: flex;
-  justify-content: space-between;
-}
-
-header img {
-  height: min-content;
-  width: 40px;
+  flex-direction: column;
 }
 
 h1 {
@@ -72,8 +59,61 @@ h1 a {
   color: var(--charleston-green);
 }
 
+.menu_icon {
+  width: 50px;
+  cursor: pointer;
+  z-index: 2;
+  margin-left: 1em;
+}
+
 nav {
-  display: none;
+  visibility: visible;
+  overflow: hidden;
+  width: 0;
+  position: fixed;
+  height: 100%;
+  transition: width 1s ease-in-out;
+  background-color: var(--bright-gray);
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 3em;
+  padding-right: 10px;
+}
+
+nav li {
+  padding: 10px 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+nav li a {
+  text-decoration: none;
+  color: var(--charleston-green);
+  font-size: 2rem;
+}
+
+nav li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+nav > ul li a:hover::after {
+  border-bottom: 2px solid var(--carmine-pink);
+  width: 100%;
+}
+
+.show_menu {
+  width: 100%;
 }
 
 .headline_section {
@@ -84,34 +124,34 @@ nav {
 }
 
 .headline_section h2 {
-  width: 50%;
   font-size: 2.5rem;
   background-image: url(./img/red-clouds-image.jpg);
   background-clip: text;
+  font-weight: 700;
   color: transparent;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  margin-top: 1em;
 }
 
 .headline_section > p {
   color: var(--granite-gray);
-  background-color: var(--cultured);
   padding: .8em;
   border: 3px solid white;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
-  width: 50%;
+  width: 90%;
+  margin-top: 1em;
 }
 
 .concert_date {
-  background-color: var(--cultured);
   color: var(--granite-gray);
   font-family: 'Urbanist', sans-serif;
   padding: 1em;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 50%;
+  width: 90%;
 }
 
 .concert_date b { 
@@ -121,10 +161,10 @@ nav {
 
 .concert_date p {
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-.main_program, .featured_artists {
+.main_program, .featured_artists, .card {
   display: grid;
   place-items: center;
   background-color: var(--charleston-green);
@@ -171,7 +211,7 @@ nav {
   color: var(--light-gray);
   text-align: left;
   font-size: 0.8rem;
-  width: 30%;
+  width: 40%;
 }
 
 .program_icon {
@@ -187,7 +227,7 @@ nav {
   padding: 1.5em;
   width: 88%;
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 700;
   margin-block-start: 1em;
 }
@@ -279,7 +319,7 @@ nav {
 }
 
 .dropdown {
-  width: 20px;
+  width: 15px;
 }
 
 .rotate {
