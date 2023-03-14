@@ -92,6 +92,12 @@
   background-size: 100% 100%;
 }
 
+.footer_section p {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--granite-gray);
+}
+
 .past_event .overlay {
   display: flex;
   align-items: center;
@@ -152,7 +158,7 @@
   filter: brightness(2);
 }
 
-.partners .airbnb{
+.partners .airbnb {
   width: 150px;
   justify-self: center;
 }
@@ -161,12 +167,6 @@
   display: flex;
   background-color: var(--cultured);
   justify-content: center;
-}
-
-.footer_section p {
-  font-size: 1rem;
-  text-align: center;
-  color: var(--granite-gray);
 }
 
 .footer_section .concert_logo {
@@ -178,6 +178,7 @@
     padding: 0;
     padding-bottom: 2em;
   }
+
   .about h2 {
     width: 60%;
     text-align: center;

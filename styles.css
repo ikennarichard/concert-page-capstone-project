@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;900&display=swap');
 
 :root {
@@ -9,13 +8,15 @@
   --charleston-green: #272a31;
   --granite-gray: #616161;
   --phillipine-gray: #8c8c8c;
-  --arsenic: #3C3F46;
+  --arsenic: #3c3f46;
   --cultured: #f4f4f4;
-  --page-background:linear-gradient(90deg, rgba(244,244,244,1) 1%, rgba(211,211,211,1) 99%);
+  --page-background: linear-gradient(90deg, rgba(244, 244, 244, 1) 1%, rgba(211, 211, 211, 1) 99%);
   --urbanist-font: 'Urbanist', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -145,11 +146,9 @@ nav > ul li a:hover::after {
 .headline_section h2 {
   font-size: 2.7rem;
   background-image: url(./img/red-clouds-image.jpg);
-  background-clip: text;
   font-weight: 700;
   color: transparent;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   margin-top: 1em;
   text-transform: uppercase;
 }
@@ -160,7 +159,7 @@ nav > ul li a:hover::after {
 
 .headline_section > p {
   color: var(--granite-gray);
-  padding: .8em;
+  padding: 0.8em;
   border: 3px solid white;
   font-size: 0.8rem;
   font-weight: 700;
@@ -179,9 +178,9 @@ nav > ul li a:hover::after {
   padding-bottom: 3em;
 }
 
-.concert_date b { 
+.concert_date b {
   font-weight: 900;
-  font-size: 1.6rem;                        
+  font-size: 1.6rem;
 }
 
 .concert_date p {
@@ -189,7 +188,9 @@ nav > ul li a:hover::after {
   font-size: 0.9rem;
 }
 
-.main_program, .featured_artists, .card {
+.main_program,
+.featured_artists,
+.card {
   display: grid;
   place-items: center;
   background-color: var(--charleston-green);
@@ -250,7 +251,8 @@ nav > ul li a:hover::after {
   background-color: var(--carmine-pink);
   text-align: center;
   padding: 1.5em;
-  width: min(98%, 500px);
+  width: 98%;
+  max-width: 500px;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 700;
@@ -337,7 +339,8 @@ nav > ul li a:hover::after {
   text-transform: uppercase;
   appearance: none;
   padding-block: 1em;
-  width: min(100%, 462px);
+  width: 100%;
+  max-width: 462px;
   background: none;
   outline: none;
   border: 2px solid var(--light-gray);
@@ -359,11 +362,44 @@ nav > ul li a:hover::after {
   transform: rotate(180deg);
 }
 
-.partner, .footer_section {
+.partner,
+.footer_section {
   display: none;
 }
 
 @media (min-width: 768px) {
+  nav {
+    width: fit-content;
+    position: static;
+    overflow: visible;
+    transition: none;
+    background: none;
+    margin-left: 4em;
+    margin-block: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 0;
+    padding-right: 10px;
+    gap: 5px;
+  }
+
+  nav li {
+    padding: 10px 14px;
+    font-weight: 600;
+    position: relative;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: var(--charleston-green);
+    font-size: 0.8rem;
+  }
+
   .login_section {
     display: block;
     background-color: var(--arsenic);
@@ -396,47 +432,15 @@ nav > ul li a:hover::after {
   }
 
   header {
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 0.5em;
-  padding-inline: 7em;
-  width: 100%;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  }
-
-  nav {
-    width: fit-content;
-    position: static;
-    overflow: visible;
-    transition: none;
-    background: none;
-    margin-left: 4em;
-    margin-block: auto;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    list-style-type: none;
-    padding-top: 0;
-    padding-right: 10px;
-    gap: 5px;
-  }
-  
-  nav li {
-    padding: 10px 14px;
-    font-weight: 600;
-    position: relative;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    color: var(--charleston-green);
-    font-size: 0.8rem;
+    justify-content: space-between;
+    padding-block: 0.5em;
+    padding-inline: 7em;
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
   .headline_section {
@@ -467,6 +471,27 @@ nav > ul li a:hover::after {
 }
 
 @media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 0;
+    padding-right: 10px;
+    gap: 5px;
+  }
+
+  nav li {
+    padding: 10px 14px;
+    font-weight: 600;
+    position: relative;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: var(--charleston-green);
+    font-size: 0.8rem;
+  }
 
   .login_section {
     display: block;
@@ -500,15 +525,15 @@ nav > ul li a:hover::after {
   }
 
   header {
-  align-items: center;
-  justify-content: space-between;
-  padding-block: 0.5em;
-  padding-inline: 7em;
-  width: 100%;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.5em;
+    padding-inline: 7em;
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
   }
 
   nav {
@@ -519,28 +544,6 @@ nav > ul li a:hover::after {
     background: none;
     margin-left: 4em;
     margin-block: auto;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
-    padding-top: 0;
-    padding-right: 10px;
-    gap: 5px;
-  }
-  
-  nav li {
-    padding: 10px 14px;
-    font-weight: 600;
-    position: relative;
-  }
-  
-  nav li a {
-    text-decoration: none;
-    color: var(--charleston-green);
-    font-size: 0.8rem;
   }
 
   .header_tickets {
@@ -567,13 +570,19 @@ nav > ul li a:hover::after {
 
   .headline_section > p {
     color: var(--granite-gray);
-    padding: .8em;
+    padding: 0.8em;
     border: 3px solid white;
     font-size: 0.8rem;
     font-weight: 700;
     width: 40%;
     margin-top: 1em;
     line-height: 1.5;
+  }
+
+  .footer_section p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--granite-gray);
   }
 
   .main_program ul {
@@ -641,20 +650,20 @@ nav > ul li a:hover::after {
     gap: 5em;
     width: 100%;
   }
-  
+
   .partners img {
     width: 100px;
   }
-  
+
   .partners .google {
     width: 70px;
   }
-  
+
   .partners .mozilla {
     filter: brightness(2);
   }
-  
-  .partners .airbnb{
+
+  .partners .airbnb {
     width: 150px;
   }
 
@@ -669,13 +678,7 @@ nav > ul li a:hover::after {
     justify-content: center;
     gap: 5em;
   }
-  
-  .footer_section p {
-    font-size: 1rem;
-    text-align: center;
-    color: var(--granite-gray);
-  }
-  
+
   .footer_section .concert_logo {
     border: none;
   }
