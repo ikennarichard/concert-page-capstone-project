@@ -61,6 +61,7 @@ header {
 
 h1 {
   display: none;
+  color: var(--arsenic);
 }
 
 h1 a {
@@ -357,6 +358,10 @@ nav > ul li a:hover::after {
   transform: rotate(180deg);
 }
 
+.partner, .footer_section {
+  display: none;
+}
+
 @media (min-width: 768px) {
 
   .login_section {
@@ -402,17 +407,14 @@ nav > ul li a:hover::after {
   z-index: 2;
   }
 
-  header > div {
-    display: flex;
-    gap: 20px;
-  }
-
   nav {
     width: fit-content;
     position: static;
     overflow: visible;
     transition: none;
     background: none;
+    margin-left: 4em;
+    margin-block: auto;
   }
   
   nav ul {
@@ -513,10 +515,15 @@ nav > ul li a:hover::after {
     gap: 20px;
     height: initial;
     transition: none;
+    margin-left: 1.5em;
   }
 
   .more_button {
     display: none;
+  }
+
+  .partner {
+    display: grid;
   }
 
   .partner h2 {
@@ -567,5 +574,4 @@ nav > ul li a:hover::after {
   .footer_section .concert_logo {
     border: none;
   }
-  
 }

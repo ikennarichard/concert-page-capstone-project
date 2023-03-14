@@ -116,6 +116,7 @@
 
 .partner {
   background-color: var(--arsenic);
+  display: grid;
 }
 
 .partner h2 {
@@ -163,6 +164,9 @@
 }
 
 @media (min-width: 768px) {
+  .about {
+    padding: 0;
+  }
   .about h2 {
     width: 60%;
     text-align: center;
