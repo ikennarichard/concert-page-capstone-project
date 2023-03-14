@@ -1,0 +1,243 @@
+:root {
+  --brightish-gray: #d0d0d0;
+}
+
+.about {
+  align-items: center;
+  background-color: #efefef;
+}
+
+.about > .info {
+  border: 1.5px solid var(--brightish-gray);
+  background-color: rgba(255, 255, 255, 0.834);
+  color: var(--granite-gray);
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+}
+
+.about .red_line {
+  display: none;
+}
+
+.about > .reach_us {
+  border: none;
+  text-align: center;
+}
+
+.about address > a {
+  color: var(--arsenic);
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.right_arrow {
+  display: none;
+  filter: brightness(50%);
+}
+
+.logo_section {
+  background-color: #fff;
+}
+
+.logo_section h2 {
+  width: 80%;
+  text-align: center;
+  color: var(--arsenic);
+}
+
+.logo_section > p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--arsenic);
+  width: 70%;
+}
+
+.concert_logo {
+  padding-block: 0.6em;
+  width: 200px;
+  text-align: center;
+  color: var(--charleston-green);
+  font-size: 2rem;
+  border: 1px solid var(--granite-gray);
+}
+
+.past_events {
+  background-color: var(--cultured);
+}
+
+.past_events > p {
+  text-align: center;
+  color: var(--granite-gray);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.past_events h2 {
+  color: var(--arsenic);
+  text-align: center;
+  width: 70%;
+}
+
+.past_event {
+  background: url('/img/actionvance-unsplash.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 320px;
+  height: 200px;
+  position: relative;
+}
+
+.events_container {
+  display: grid;
+  gap: 20px;
+}
+
+.second {
+  background: url('/img/muneeb-syed-unsplash.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+
+.footer_section p {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--granite-gray);
+}
+
+.footer_section > p {
+  font-size: 0.8rem;
+}
+
+.past_event .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: multiply;
+  opacity: 90%;
+  background-color: var(--carmine-pink);
+  height: 100%;
+  width: 100%;
+}
+
+.past_event p {
+  position: absolute;
+  top: 0;
+  transform: translate(50%, 50%);
+  width: 50%;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease-in-out;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.past_event p:hover {
+  text-shadow: 0 0 5px blue;
+}
+
+.past_event p > b {
+  font-size: 2rem;
+}
+
+.partner {
+  background-color: var(--arsenic);
+  display: grid;
+}
+
+.partner h2 {
+  color: #fff;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.partners img {
+  width: 100px;
+}
+
+.partners .google {
+  width: 70px;
+}
+
+.partners .mozilla {
+  filter: brightness(2);
+}
+
+.partners .airbnb {
+  width: 150px;
+  justify-self: center;
+}
+
+.footer_section {
+  display: flex;
+  background-color: var(--cultured);
+  justify-content: center;
+}
+
+.footer_section .concert_logo {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding: 0;
+    padding-bottom: 2em;
+  }
+
+  .about h2 {
+    width: 60%;
+    text-align: center;
+  }
+
+  .about .red_line {
+    display: block;
+    width: 20px;
+  }
+
+  .about > .info {
+    width: 50%;
+  }
+
+  address > a {
+    display: flex;
+    align-items: center;
+  }
+
+  .right_arrow {
+    display: block;
+    width: 15px;
+    padding-top: 3px;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .footer_section {
+    background-color: var(--arsenic);
+  }
+
+  .footer_section .concert_logo {
+    color: white;
+  }
+
+  .footer_section p {
+    color: white;
+  }
+
+  .past_events {
+    padding-bottom: 4em;
+  }
+
+  .events_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
