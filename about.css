@@ -9,7 +9,7 @@
 
 .about > .info {
   border: 1px solid var(--brightish-gray);
-  color: var(--arsenic);
+  color: var(--granite-gray);
   width: 100%;
   text-align: center;
 }
