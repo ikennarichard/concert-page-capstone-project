@@ -116,18 +116,9 @@ Clone this repository to your desired folder:
 - Open the folder in VS code
 
 
-### Install
+<!-- ### Install
 
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+Install this project with: -->
 
 ### Usage
 
