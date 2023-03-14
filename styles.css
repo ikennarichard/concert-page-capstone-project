@@ -465,7 +465,7 @@ nav > ul li a:hover::after {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
   .login_section {
     display: block;
