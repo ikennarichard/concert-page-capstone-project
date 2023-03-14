@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>First Capstone Project</b></h3>
+  <h3><b>Concert Page Capstone Project</b></h3>
 
 </div>
 
@@ -32,17 +32,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Concert Page Capstone Project I] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+> **Concert Page** is the first Capstone Project for the Module 1 of the Microverse Web Development Program, it brings together the knowledge and skills gained during the course of the first module. The project is built using HTML, CSS and JavaScript and its meant to test the students understanding of the three fundamentals tools.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> The project is built with HTML, CSS and JavaScript.
 
 <details>
   <summary>Client</summary>
@@ -53,7 +51,7 @@
   </ul>
 </details>
 
-<details>
+<!-- <details>
   <summary>Server</summary>
   <ul>
     <li><a href="https://expressjs.com/"></a></li>
@@ -65,13 +63,11 @@
   <ul>
     <li><a href="https://www.postgresql.org/"></a></li>
   </ul>
-</details>
+</details> -->
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
 
 - **HomePage**
 - **About Page**
@@ -82,9 +78,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+- [Live Demo Link](https://ikennarichard.github.io/concert-page-capstone-project/)
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+You can also watch this [video]() to see details of the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,14 +88,14 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
+- Browser
+- VS Code
+- Basic Knowledge of HTML, CSS and JavaScript
 <!--
 Example command:
 
@@ -112,14 +108,13 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone github.com/ikennarichard/concert-page-capstone-project.git
 ```
---->
+
+- Open the folder in VS code
+
 
 ### Install
 
@@ -136,39 +131,19 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
+Once you have the live server extension, you need the click on the Go Live icon at the bottom of the VS code window or you could hit 'Alt + L + O' on your keyboard.
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+To run tests you can use the following commands in the root of the project folder: 
+- For HTML you should run " npx hint . "
+- For CSS you should run " npx stylelint "**/*.{css,scss}"
+- For JavaScript you should run " npx eslint "
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+Not applicable to this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,31 +151,16 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: [ikennarichard](https://github.com/ikennarichard)
+- Twitter: [ikennarichard_](https://twitter.com/ikennarichard_)
+- LinkedIn: [Ikenna Richard](https://linkedin.com/in/ikenna-oguejiofor-38076a237)
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- Add the tickets section of the page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,7 +170,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/ikennarichard/concert-page-capstone-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -218,9 +178,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project please leave a ⭐️ or feedback that can improve the project. Thank you in advance! 😊
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,15 +186,16 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+I would like to thank all the humans at Microverse for this amazing program, and also a special thank you to the code reviewers, especially to the ones that work super hard to see the student succeed, what they do is a very important aspect of the program. It motivates me to write better and code, thank you guys.
 
-I would like to thank...
+- [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for allowing us to use her project from behance 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
@@ -248,14 +207,12 @@ I would like to thank...
 
   - [Answer_2]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
