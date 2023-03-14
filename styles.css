@@ -323,6 +323,7 @@ nav > ul li a:hover::after {
   font-size: 0.8rem;
   color: var(--arsenic);
   font-weight: 600;
+  margin-block-start: 1.2em;
 }
 
 .black_line {
