@@ -204,6 +204,6 @@ I would like to thank all the humans at Microverse for this amazing program, and
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/ikennarichard/concert-page-capstone-project/blob/add-homepage/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
