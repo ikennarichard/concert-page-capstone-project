@@ -49,7 +49,7 @@ const artists = [
     description: 'Tems is a singer and songwriter',
 
   },
-]
+];
 
 function toggleMenuBtn() {
   if (menuIcon.src.includes('menu')) {
@@ -76,8 +76,8 @@ menuIcon.addEventListener('click', displayMenu);
 menuItems.forEach((item) => item.addEventListener('click', displayMenuItems));
 
 function addFeaturedArtists() {
-  for (let i=0; i < artists.length; i++) {
-    featuredAritists.innerHTML+= `
+  for (let i = 0; i < artists.length; i += 1) {
+    featuredAritists.innerHTML += `
     <div>
       <img src=${artists[i].img} class='celebrity_image' alt='headshot of ${artists[i].name}' />
       <div class='celebrity_details'>
@@ -87,8 +87,8 @@ function addFeaturedArtists() {
       <p class='celebrity_info'>${artists[i].description}</p>
       </div>
     </div>
-    `
-      } 
+    `;
+  }
 }
 
 dropDownBtn.addEventListener('click', () => {
