@@ -33,11 +33,21 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
 .login_section {
   display: none;
+}
+
+.twitter_icon {
+  filter: brightness(0) invert(1);
+  width: 15px;
+}
+
+.facebook_icon {
+  width: 25px;
 }
 
 main {
@@ -47,7 +57,6 @@ main {
 
 header {
   display: flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -121,6 +130,10 @@ nav > ul li a:hover::after {
   position: fixed;
 }
 
+.header_tickets {
+  display: none;
+}
+
 .headline_section {
   display: flex;
   flex-direction: column;
@@ -129,7 +142,7 @@ nav > ul li a:hover::after {
 }
 
 .headline_section h2 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   background-image: url(./img/red-clouds-image.jpg);
   background-clip: text;
   font-weight: 700;
@@ -138,6 +151,10 @@ nav > ul li a:hover::after {
   -moz-background-clip: text;
   margin-top: 1em;
   text-transform: uppercase;
+}
+
+.headline_section h2 small {
+  font-size: 1.5rem;
 }
 
 .headline_section > p {
@@ -153,16 +170,17 @@ nav > ul li a:hover::after {
 .concert_date {
   color: var(--granite-gray);
   font-family: 'Urbanist', sans-serif;
-  padding: 1em;
+  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 90%;
+  padding-bottom: 3em;
 }
 
 .concert_date b { 
   font-weight: 900;
-  font-size: 1.5rem;                        
+  font-size: 1.6rem;                        
 }
 
 .concert_date p {
@@ -246,16 +264,17 @@ nav > ul li a:hover::after {
 }
 
 .container {
-  display: grid;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
   height: 230px;
   overflow: hidden;
-  width: 375px;
+  align-items: center;
+  gap: 20px;
   transition: height 0.5s ease-in-out;
 }
 
 .slide_down {
-  height: 50em;
+  height: 45em;
 }
 
 .featured_artists > h2 {
@@ -266,66 +285,72 @@ nav > ul li a:hover::after {
   margin-top: -1em;
 }
 
-.featured_artists > .container > article {
+.featured_artists > .container > div {
   display: flex;
+  align-items: center;
   gap: 10px;
+  width: 100%;
 }
 
-.featured_artists > .container .image_container {
-  flex: 0 0 150px;
-}
-
-.featured_artists > .container .image_container > img{
-  height: 100%;
+.featured_artists > .container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 
 .celebrity_details {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
-  width: 50%;
-  margin-top: -2px;
 }
 
 .celebrity_name {
   color: var(--charleston-green);
+  font-size: 1.2rem;
 }
 
 .celebrity_title {
   color: var(--carmine-pink);
-  font-size: 0.8rem;
-  font-family: var(--urbanist-font);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-style: italic;
+  filter: opacity(80%);
 }
 
 .celebrity_info {
-  font-size: 1rem;
-  font-family: var(--urbanist-font);
+  font-size: 0.8rem;
+  color: var(--arsenic);
+  font-weight: 600;
 }
 
 .black_line {
   display: block;
-  border: 1px solid var(--granite-gray);
-  border-radius: 3px;
-  width: 20px;
+  border: 1px solid var(--light-gray);
+  border-radius: 1em;
+  width: 10px;
 }
 
 .more_button {
   text-transform: uppercase;
   appearance: none;
   padding-block: 1em;
-  width: min(90%, 375px);
-  margin-right: 2em;
+  width: min(100%, 462px);
   background: none;
   outline: none;
-  border: 1px solid var(--light-gray);
+  border: 2px solid var(--light-gray);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: var(--arsenic);
+  font-size: 0.7rem;
+  font-weight: bold;
 }
 
 .dropdown {
-  width: 15px;
+  width: 10px;
+  margin-left: 5px;
 }
 
 .rotate {
@@ -333,12 +358,214 @@ nav > ul li a:hover::after {
 }
 
 @media (min-width: 768px) {
-  .log_section {
+
+  .login_section {
+    display: block;
+    background-color: var(--arsenic);
+    padding-block: 0.5em;
+    padding-inline: 5em;
+    color: var(--cultured);
+  }
+
+  .login_section > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    gap: 10px;
+    list-style-type: none;
+  }
+
+  .login_section > ul > li > a {
+    text-decoration: none;
+    color: var(--cultured);
+    font-size: 0.9rem;
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  h1 {
     display: block;
   }
 
-  .login_section ul {
-    list-style-type: none;
-    display: flex;
+  header {
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5em;
+  padding-inline: 7em;
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   }
+
+  header > div {
+    display: flex;
+    gap: 20px;
+  }
+
+  nav {
+    width: fit-content;
+    position: static;
+    overflow: visible;
+    transition: none;
+    background: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 0;
+    padding-right: 10px;
+    gap: 5px;
+  }
+  
+  nav li {
+    padding: 10px 14px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: var(--charleston-green);
+    font-size: 0.8rem;
+  }
+
+  .header_tickets {
+    border: 3px solid var(--carmine-pink);
+    padding-inline: 0.8em;
+    padding-block: 0.8em;
+    text-decoration: none;
+    width: fit-content;
+    color: var(--carmine-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+
+  .headline_section {
+    padding-left: 6em;
+    gap: 30px;
+  }
+
+  .headline_section h2 {
+    width: 40%;
+  }
+
+  .headline_section > p {
+    color: var(--granite-gray);
+    padding: .8em;
+    border: 3px solid white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 40%;
+    margin-top: 1em;
+    line-height: 1.5;
+  }
+
+  .main_program ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    place-items: center;
+    gap: 2px;
+    height: 170px;
+  }
+
+  .main_program ul li {
+    text-align: center;
+    flex-direction: column;
+    transition: border 0.3s ease-in-out;
+  }
+
+  .main_program li:hover {
+    border: 1px solid white;
+  }
+
+  .main_program ul li > p {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 100%;
+    padding-inline: 0.4em;
+  }
+
+  .tickets {
+    color: #fff;
+    background: none;
+    text-align: center;
+    padding: 0;
+    width: fit-content;
+    text-decoration: underline;
+    margin-block-start: 1em;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+    height: initial;
+    transition: none;
+  }
+
+  .more_button {
+    display: none;
+  }
+
+  .partner h2 {
+    color: var(--granite-gray);
+    display: block;
+  }
+
+  .partners {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    width: 100%;
+  }
+  
+  .partners img {
+    width: 100px;
+  }
+  
+  .partners .google {
+    width: 70px;
+  }
+  
+  .partners .mozilla {
+    filter: brightness(2);
+  }
+  
+  .partners .airbnb{
+    width: 150px;
+  }
+
+  .concert_logo {
+    font-size: 2rem;
+  }
+
+  .footer_section {
+    background-color: var(--cultured);
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+  }
+  
+  .footer_section p {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--granite-gray);
+  }
+  
+  .footer_section .concert_logo {
+    border: none;
+  }
+  
 }

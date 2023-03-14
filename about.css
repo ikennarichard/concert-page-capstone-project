@@ -14,6 +14,10 @@
   text-align: center;
 }
 
+.about .red_line {
+  display: none;
+}
+
 .about > .reach_us {
   border: none;
   text-align: center;
@@ -29,7 +33,6 @@
 }
 
 .logo_section h2 {
-  color: var(--arsenic);
   width: 80%;
   text-align: center;
 }
@@ -54,8 +57,11 @@
   background-color: var(--cultured);
 }
 
-.past_events p {
+.past_events > p {
   text-align: center;
+  color: var(--granite-gray);
+  font-size: 0.8rem;
+  font-weight: 700;
 }
 
 .past_events h2 {
@@ -117,8 +123,11 @@
 }
 
 .partners {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .partners img {
@@ -133,7 +142,13 @@
   filter: brightness(2);
 }
 
+.partners .airbnb{
+  width: 150px;
+  justify-self: center;
+}
+
 .footer_section {
+  display: flex;
   background-color: var(--cultured);
 }
 
@@ -141,4 +156,40 @@
   font-size: 1rem;
   text-align: center;
   color: var(--granite-gray);
+}
+
+.footer_section .concert_logo {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .about h2 {
+    width: 60%;
+    text-align: center;
+  }
+
+  .about .red_line {
+    display: block;
+    width: 20px;
+  }
+
+  .about > .info {
+    width: 50%;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .footer_section {
+    background-color: var(--arsenic);
+  }
+
+  .footer_section .concert_logo {
+    color: white;
+  }
+
+  .footer_section p {
+    color: white;
+  }
 }
