@@ -26,6 +26,13 @@
 .about address > a {
   color: var(--arsenic);
   font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.right_arrow {
+  display: none;
+  filter: brightness(50%);
 }
 
 .logo_section {
@@ -35,6 +42,7 @@
 .logo_section h2 {
   width: 80%;
   text-align: center;
+  color: var(--arsenic);
 }
 
 .logo_section > p {
@@ -67,6 +75,7 @@
 .past_events h2 {
   color: var(--arsenic);
   text-align: center;
+  width: 70%;
 }
 
 .past_event {
@@ -151,6 +160,7 @@
 .footer_section {
   display: flex;
   background-color: var(--cultured);
+  justify-content: center;
 }
 
 .footer_section p {
@@ -166,6 +176,7 @@
 @media (min-width: 768px) {
   .about {
     padding: 0;
+    padding-bottom: 2em;
   }
   .about h2 {
     width: 60%;
@@ -179,6 +190,17 @@
 
   .about > .info {
     width: 50%;
+  }
+
+  address > a {
+    display: flex;
+    align-items: center;
+  }
+
+  .right_arrow {
+    display: block;
+    width: 15px;
+    padding-top: 3px;
   }
 
   .partner {

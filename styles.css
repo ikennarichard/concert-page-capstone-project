@@ -204,8 +204,8 @@ nav > ul li a:hover::after {
 
 .red_line {
   border: 1px solid var(--carmine-pink);
-  width: 50px;
-  border-radius: 3px;
+  width: 20px;
+  border-radius: 6px;
 }
 
 .main_program ul {
@@ -363,6 +363,109 @@ nav > ul li a:hover::after {
 }
 
 @media (min-width: 768px) {
+  .login_section {
+    display: block;
+    background-color: var(--arsenic);
+    padding-block: 0.5em;
+    padding-inline: 5em;
+    color: var(--cultured);
+  }
+
+  .login_section > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    gap: 10px;
+    list-style-type: none;
+  }
+
+  .login_section > ul > li > a {
+    text-decoration: none;
+    color: var(--cultured);
+    font-size: 0.9rem;
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  h1 {
+    display: block;
+  }
+
+  header {
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 0.5em;
+  padding-inline: 7em;
+  width: 100%;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  }
+
+  nav {
+    width: fit-content;
+    position: static;
+    overflow: visible;
+    transition: none;
+    background: none;
+    margin-left: 4em;
+    margin-block: auto;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 0;
+    padding-right: 10px;
+    gap: 5px;
+  }
+  
+  nav li {
+    padding: 10px 14px;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: var(--charleston-green);
+    font-size: 0.8rem;
+  }
+
+  .headline_section {
+    padding-left: 4em;
+  }
+
+  .headline_section h2 {
+    width: 60%;
+  }
+
+  .headline_section p {
+    width: 50%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+    height: initial;
+    transition: none;
+    margin-left: 1.5em;
+  }
+
+  .more_button {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
 
   .login_section {
     display: block;
@@ -510,9 +613,9 @@ nav > ul li a:hover::after {
 
   .container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
-    gap: 20px;
+    gap: 10px;
     height: initial;
     transition: none;
     margin-left: 1.5em;
@@ -556,6 +659,7 @@ nav > ul li a:hover::after {
 
   .concert_logo {
     font-size: 2rem;
+    color: var(--arsenic);
   }
 
   .footer_section {
