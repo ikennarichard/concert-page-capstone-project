@@ -227,6 +227,10 @@
     color: white;
   }
 
+  .past_events {
+    padding-bottom: 4em;
+  }
+
   .events_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
