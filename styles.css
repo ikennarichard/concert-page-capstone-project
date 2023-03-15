@@ -77,6 +77,10 @@ h1 a {
   margin-left: 1em;
 }
 
+.nav_container {
+  position: fixed;
+}
+
 nav {
   visibility: visible;
   overflow: hidden;
@@ -269,15 +273,15 @@ nav > ul li a:hover::after {
 .container {
   display: flex;
   flex-direction: column;
-  height: 230px;
   overflow: hidden;
+  height: 250px;
   align-items: center;
   gap: 20px;
   transition: height 0.5s ease-in-out;
 }
 
 .slide_down {
-  height: 45em;
+  height: 53em;
 }
 
 .featured_artists > h2 {
@@ -293,12 +297,28 @@ nav > ul li a:hover::after {
   align-items: center;
   gap: 20px;
   width: 100%;
+  position: relative;
+  padding: 0.7em;
+}
+
+.featured_artists > .container > div > .image_container {
+  background-image: url('./img/Chess_Board.png');
+  background-size: 100% 100%;
+  background-color: white;
+  filter: opacity(10px);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 2px;
+  top: 3px;
+  z-index: 1;
 }
 
 .featured_artists > .container img {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  z-index: 1;
 }
 
 .celebrity_details {
@@ -374,7 +394,6 @@ nav > ul li a:hover::after {
     overflow: visible;
     transition: none;
     background: none;
-    margin-left: 4em;
     margin-block: auto;
   }
 
@@ -385,7 +404,7 @@ nav > ul li a:hover::after {
     list-style-type: none;
     padding-top: 0;
     padding-right: 10px;
-    gap: 5px;
+    gap: 10px;
   }
 
   nav li {
@@ -433,9 +452,8 @@ nav > ul li a:hover::after {
 
   header {
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-block: 0.5em;
-    padding-inline: 7em;
     width: 100%;
     background-color: #fff;
     position: sticky;
@@ -470,15 +488,14 @@ nav > ul li a:hover::after {
   }
 }
 
-@media (min-width: 1024px) {
-  nav ul {
+@media (min-width: 1200px) {
+  .nav_container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style-type: none;
+  }
+
+  nav ul {
     padding-top: 0;
-    padding-right: 10px;
-    gap: 5px;
+    gap: 50px;
   }
 
   nav li {
@@ -526,9 +543,8 @@ nav > ul li a:hover::after {
 
   header {
     align-items: center;
-    justify-content: space-between;
     padding-block: 0.5em;
-    padding-inline: 7em;
+    padding-inline: 3em;
     width: 100%;
     background-color: #fff;
     position: sticky;
@@ -542,8 +558,6 @@ nav > ul li a:hover::after {
     overflow: visible;
     transition: none;
     background: none;
-    margin-left: 4em;
-    margin-block: auto;
   }
 
   .header_tickets {
@@ -625,7 +639,7 @@ nav > ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
-    gap: 10px;
+    gap: 30px;
     height: initial;
     transition: none;
     margin-left: 1.5em;

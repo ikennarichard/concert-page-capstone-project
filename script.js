@@ -82,7 +82,9 @@ function addFeaturedArtists() {
   for (let i = 0; i < artists.length; i += 1) {
     featuredAritists.innerHTML += `
     <div>
+      <div class="image_container"></div>
       <img src=${artists[i].img} class='celebrity_image' alt='headshot of ${artists[i].name}' />
+      
       <div class='celebrity_details'>
       <h2 class='celebrity_name'> ${artists[i].name} </h2> 
       <p class='celebrity_title'>${artists[i].title}</p>
