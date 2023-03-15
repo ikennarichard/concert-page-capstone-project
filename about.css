@@ -180,6 +180,10 @@
   border: none;
 }
 
+.footer_section > p {
+  font-size: 0.8rem;
+}
+
 @media (min-width: 768px) {
   .about {
     padding: 0;

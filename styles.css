@@ -130,6 +130,7 @@ nav > ul li a:hover::after {
 
 .change_position {
   position: fixed;
+  z-index: 2;
 }
 
 .header_tickets {

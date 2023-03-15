@@ -53,6 +53,7 @@ const artists = [
 
 function toggleMenuBtn() {
   if (menuIcon.src.includes('menu')) {
+    menuIcon.style.zIndex = 2;
     menuIcon.src = 'icons/cancel-icon.svg';
   } else {
     menuIcon.src = 'icons/menu-icon.svg';
@@ -69,6 +70,8 @@ function displayMenu() {
 
 function displayMenuItems() {
   navBar.classList.remove('show_menu');
+  menuIcon.classList.remove('change_position');
+  menuIcon.style.zIndex = 1;
   menuIcon.src = 'icons/menu-icon.svg';
 }
 
