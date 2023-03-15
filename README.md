@@ -80,7 +80,7 @@
 
 - [Live Demo Link](https://ikennarichard.github.io/concert-page-capstone-project/)
 
-You can also watch this [video]() to see details of the project
+You can also watch this [video](https://www.loom.com/share/8837aa04609e4ad981fd98460b107e86) to see details of the project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
