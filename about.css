@@ -8,10 +8,12 @@
 }
 
 .about > .info {
-  border: 1px solid var(--brightish-gray);
+  border: 1.5px solid var(--brightish-gray);
+  background-color: rgba(255, 255, 255, 0.834);
   color: var(--granite-gray);
   width: 100%;
   text-align: center;
+  padding: 2em;
 }
 
 .about .red_line {
@@ -85,6 +87,11 @@
   width: 320px;
   height: 200px;
   position: relative;
+}
+
+.events_container {
+  display: grid;
+  gap: 20px;
 }
 
 .second {
@@ -218,5 +225,11 @@
 
   .footer_section p {
     color: white;
+  }
+
+  .events_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
