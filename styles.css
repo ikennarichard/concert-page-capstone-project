@@ -492,14 +492,15 @@ nav > ul li a:hover::after {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .nav_container {
     display: flex;
   }
 
   nav ul {
     padding-top: 0;
-    gap: 50px;
+    gap: 20px;
+    margin-left: 10px;
   }
 
   nav li {
