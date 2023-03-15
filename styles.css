@@ -274,7 +274,7 @@ nav > ul li a:hover::after {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 250px;
+  height: 260px;
   align-items: center;
   gap: 20px;
   transition: height 0.5s ease-in-out;
