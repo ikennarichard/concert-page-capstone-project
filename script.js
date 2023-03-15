@@ -61,7 +61,7 @@ function toggleMenuBtn() {
 }
 
 function displayMenu() {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 768) {
     navBar.classList.toggle('show_menu');
   }
   menuIcon.classList.toggle('change_position');

@@ -388,6 +388,10 @@ nav > ul li a:hover::after {
 }
 
 @media (min-width: 768px) {
+  .nav_container {
+    position: static;
+  }
+
   nav {
     width: fit-content;
     position: static;
