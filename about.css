@@ -105,6 +105,10 @@
   color: var(--granite-gray);
 }
 
+.footer_section > p {
+  font-size: 0.8rem;
+}
+
 .past_event .overlay {
   display: flex;
   align-items: center;
@@ -178,10 +182,6 @@
 
 .footer_section .concert_logo {
   border: none;
-}
-
-.footer_section > p {
-  font-size: 0.8rem;
 }
 
 @media (min-width: 768px) {
