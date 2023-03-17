@@ -177,7 +177,7 @@ If you like this project please leave a ⭐️ or feedback that can improve the 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank all the humans at Microverse for this amazing program, and also a special thank you to the code reviewers, especially to the ones that work super hard to see the student succeed, what they do is a very important aspect of the program. It motivates me to write better and code, thank you guys.
+I would like to thank all the humans at Microverse for this amazing program, and also a special thank you to the code reviewers, especially the ones that work super hard to see the student succeed, code reivew is very important aspect of the Microverse program. It helps me write better code.
 
 - [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for allowing us to use her project from behance 
 
