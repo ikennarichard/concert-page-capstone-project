@@ -81,7 +81,7 @@
 }
 
 .past_event {
-  background: url('/img/actionvance-unsplash.jpg') no-repeat;
+  background: url('./img/actionvance-unsplash.jpg') no-repeat;
   background-size: cover;
   text-align: center;
   width: 320px;
@@ -97,6 +97,10 @@
 .second {
   background: url('/img/muneeb-syed-unsplash.jpg') no-repeat;
   background-size: 100% 100%;
+  text-align: center;
+  width: 320px;
+  height: 200px;
+  position: relative;
 }
 
 .footer_section p {
