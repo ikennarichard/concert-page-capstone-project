@@ -95,7 +95,7 @@
 }
 
 .second {
-  background: url('/img/muneeb-syed-unsplash.jpg') no-repeat;
+  background: url('./img/muneeb-syed-unsplash.jpg') no-repeat;
   background-size: 100% 100%;
   text-align: center;
   width: 320px;
@@ -113,7 +113,7 @@
   font-size: 0.8rem;
 }
 
-.past_event .overlay {
+.past_event .overlay, .second .overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +124,7 @@
   width: 100%;
 }
 
-.past_event p {
+.past_event p, .second p {
   position: absolute;
   top: 0;
   transform: translate(50%, 50%);
@@ -136,11 +136,11 @@
   font-weight: bold;
 }
 
-.past_event p:hover {
+.past_event p:hover, .second p:hover {
   text-shadow: 0 0 5px blue;
 }
 
-.past_event p > b {
+.past_event p > b, .second p > b {
   font-size: 2rem;
 }
 
